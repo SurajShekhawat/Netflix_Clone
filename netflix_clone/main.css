@@ -1,0 +1,468 @@
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff) format("woff")
+}
+
+.nkufi-font-loaded {
+    font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff) format("woff")
+}
+
+.graphik-font-loaded {
+    font-family: GraphikTH, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+.netflix-sans-font-loaded {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 900;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff")
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: GraphikTH, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+.hero_img {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_bar {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+
+.signin_btn>button {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    border: none;
+}
+
+.signin_btn>button:hover {
+    background-color: rgb(162, 3, 3);
+}
+
+.title_clm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+}
+
+.title_clm>h1{
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title_clm>h3{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.title_clm>p{
+    margin: 1rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* line-height: 1.4rem; */
+    color: white;
+    text-align: center;
+}
+
+.subscribe_sec{
+    height: auto;
+    width: 600px;
+    margin: auto;
+    padding: 1.6rem 0;
+}
+
+.subscribe_sec>form{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-floating{
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+}
+
+#floatingInput, #floatingPassword{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f6f6f6;
+}
+
+#floatingLabel{
+    color: #f6f6f6;
+}
+
+.sumbit_btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* padding: 10px 15px; */
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 280px;
+    height: 57px;
+    margin-left: 15px;
+}
+
+.sumbit_btn:hover{
+    background-color: rgb(204, 6, 6);
+}
+
+.clm_two{
+    width: 100%;
+    height: auto;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    border-top: 5px solid #8c8c8c;
+    position: relative;
+    z-index: -2;
+}
+
+.title_row{
+    width: 50%;
+    /* padding: 6rem 1rem */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_row>h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    text-align: left;
+}
+
+.title_row>h5{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.video_row{
+    width: 50%;
+}
+
+.default-ltr-cache-bjn8wh {
+    position: relative;
+}
+
+.default-ltr-cache-1d3w5wq {
+    width: 100%;
+}
+
+.default-ltr-cache-m5f3qu {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img_row{
+    width: 50%;
+    padding-top: 5rem;
+}
+
+.top_footer{
+    width: 100%;
+    padding: 0 38px;
+    color: #8c8c8c;
+}
+
+.footer_menue{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav_item>ul>li{
+    list-style: none;
+}
+
+.nav_item>ul>li>a{
+    color: #8c8c8c;
+    text-decoration: underline;
+}
+
+.nav_item{
+    /* display: flex;
+    flex-direction: row; */
+    width: 300px;
+}
+
+@media screen and (max-width:955px) {
+    .title_row{
+        width: 100%;
+        padding: 1rem 0.5rem
+    }
+    
+    .title_row>h1{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .title_row>h5{
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 500;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .video_row{
+        width: 100%;
+    }
+
+    .img_row{
+        width: 100%;
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    .title_clm>h1 {
+        color: white;
+        font-weight: 900;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title_clm>h3 {
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        margin: 1rem 0 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .title_clm>p {
+        margin: 1rem 0 0;
+        font-size: 1rem;
+        font-weight: 500;
+        /* line-height: 1.4rem; */
+        color: white;
+        text-align: center;
+    }
+
+    .subscribe_sec {
+        height: auto;
+        width: 400px;
+        margin: auto;
+        padding: 1.6rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe_sec>form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* SIGN IN PAGE CSS STARTED IN THIS AREA  */
+
+.jklkllllhj{
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-control{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #f6f6f6;
+}
+
+.signIn_form{
+    width: 400px;
+    height: auto;
+    padding: 2rem 1.5rem 5rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 5rem;
+}
+
+.signIn_form>h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-check-label{
+    color: white;
+}
+
+.form-label{
+    color: #8c8c8c !important;
+}
+.form-label:focus{
+    color: white !important;
+}
+
+.form-control{
+    /* background-color: #8c8c8c !important;
+     */
+     background: black !important;
+     padding: 2rem 0;
+}
+.form-control:invalid{
+    border-bottom: 2px solid orangered;
+}
+
+.input_row{
+    margin: 10px 0;
+}
+
+.bottom_txt p{
+font-size: 14px;
+}
+
+.bottom_txt a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.bottom_txt h6{
+    font-size: 18px;
+    margin-top: 1.6rem;
+}
+
+.signIn_btn{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    background: red;
+    color: white;
+    font-weight: 800;
+}
